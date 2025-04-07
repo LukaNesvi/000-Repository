@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(70, 140, 70);
+    height: 100%;
+    margin: 0;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.content {
+    display: flex;
+    width: 800px;
+    ;
+    background: rgb(90, 140, 90);
+    padding: 30px;
+    border: 5px solid rgb(0, 110, 0);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.img1 {
+    width: 100px;
+    height: 100px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.name {
+    font-style: italic;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.link:hover {
+    color: rgb(0, 0, 0);
+    text-decoration-color: rgb(0, 110, 0);
+}
+
+.headline {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.Introduction {
+    border: 5px solid rgb(0, 110, 0);
+    background: rgb(90, 140, 90);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.Skills {
+    background-color: rgb(70, 140, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    border: 3px rgb(0, 110, 0) solid;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.Skills:hover {
+    background-color: rgb(60, 120, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    border: 3px rgb(0, 110, 0) solid;
+
+}
+
+.WExperience {
+    background-color: rgb(70, 140, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    border: 3px rgb(0, 110, 0) solid;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.WExperience:hover {
+    background-color: rgb(60, 120, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    border: 3px rgb(0, 110, 0) solid;
+}
+
+.Education {
+    background-color: rgb(70, 140, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    border: 3px rgb(0, 110, 0) solid;
+    animation: fadeIn 6s ease-in-out;
+}
+
+.Education:hover {
+    background-color: rgb(60, 120, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    border: 3px rgb(0, 110, 0) solid;
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
