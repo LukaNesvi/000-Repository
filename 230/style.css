@@ -1,0 +1,38 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: bisque;
+    border: 1px black solid;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 190, 0);
+    border: black solid 1px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+:root {
+    font-size: 1.6rem;
+
+    }
+    
+    @media screen and (max-width: 800px) {
+        .box {
+            width: 100%;
+        }
+    }
