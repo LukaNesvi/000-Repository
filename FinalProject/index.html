@@ -7,6 +7,24 @@
     <title>Travel Agency</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+<!-- Primary Meta Tags -->
+<title>Meta Tags — Preview, Edit and Generate</title>
+<meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+<meta name="description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+<meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+<meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+
 
 </head>
 <body>
@@ -18,12 +36,16 @@
     <div class="header-tips">Tips</div>
     <div class="header-alerts">Alerts</div>
     <div class="header-blog">Blog</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </div>
 <div class="header-bg">
     <img class="header-img" src="imgs/pexels-francesco-ungaro-2835436 1 .png" alt="Background">
     <div class="bg-text1">Discover your life, travel where you want</div>
+    <div class="divider-line"></div>
     <div class="bg-text2">would you explore natur paradise in the world, let's find the best destination in world with us.</div>
+    
 </div>
+
 
 
 
@@ -35,7 +57,7 @@
     <div class="search-box">
         <div class="search-card">
             <div class="info">
-                <span>Living From</span>
+                <span>Leaving From</span>
                 <strong>Dubai</strong>
             </div>
             <div class="icon">✈️</div>
@@ -47,15 +69,17 @@
         <div class="search-card">
             <div class="info">
                 <span>Leave ✈️</span>
-                <strong>23 Jan, Sat</strong>
+                <br><strong>23-Jan, Sat</strong></br>
             </div>
             <div class="icon">📅</div>
             <div class="info">
                 <span>Return ✈️</span>
-                <strong>14 Jan, Thu</strong>
+                <br><strong>14-Jan, Thu</strong></br>
             </div>
         </div>
-        <div class="search-btn">🔍</div>
+        <div class="search-btn">
+            <i class="fas fa-magnifying-glass"></i>
+        </div>
     </div>
 </div>
 
@@ -125,7 +149,6 @@
             <div class="travel-right">
               <h2>Travel Any Corner of <br> The World With Us<br></h2>
               <p>Would you explore nature paradise in the world, let's find the best destination in world with us. Would you explore nature paradise in the world, let's find the best destination in world with us.</p>
-              <p>Would you explore nature paradise in the world, let's find the best destination in world with us.</p>
               <a href="#" class="contact-btn">Contact Us</a>
             </div>
           </div>
@@ -202,8 +225,8 @@
         </div>
 
         <div class="testimonial-navigation">
-            <div class="testimonial-nav-button">&lt;</div>
-            <div class="testimonial-nav-button">&gt;</div>
+            <div class="testimonial-nav-button"> < </div>
+            <div class="testimonial-nav-button"> > </div>
         </div>
     </section>
 
@@ -227,6 +250,19 @@
         </div>
       </footer>
       
-    
+      <script>
+        const header = document.querySelector('.header');
+      
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 960) {
+            header.style.backgroundColor = '#cccccc';
+          } else {
+            header.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+          }
+        });
+      </script>
+      
+      
+      
 </body>
 </html> 

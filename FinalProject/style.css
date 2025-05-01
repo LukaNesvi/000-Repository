@@ -1,11 +1,11 @@
 body {
-    height: 5546px;
+    height: 4000px;
     background-color: var(--background)
 }
 
 :root {
-    --color_1: #006A71;
-    --color_2: #48A6A7;
+    --color_1: #306bff;
+    --color_2: #4F7DF9;
     --color_3: #9ACBD0;
     --color_4: #F2EFE7;
     --background: #ffffff;
@@ -31,7 +31,7 @@ body {
     height: 50px;
     width: 140px;
     border-radius: 10px;
-    top: 20px;
+    top: 10px;
     right: 600px;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -54,7 +54,7 @@ body {
     height: 50px;
     width: 140px;
     border-radius: 10px;
-    top: 20px;
+    top: 10px;
     right: 450px;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -76,7 +76,7 @@ body {
     height: 50px;
     width: 140px;
     border-radius: 10px;
-    top: 20px;
+    top: 10px;
     right: 300px;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -98,7 +98,7 @@ body {
     height: 50px;
     width: 140px;
     border-radius: 10px;
-    top: 20px;
+    top: 10px;
     right: 150px;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -115,12 +115,12 @@ body {
     color: white;
     font-size: xxx-large;
     font-family: Verdana;
-    line-height: 70px;
+    line-height: 60px;
     text-align: center;
-    height: 70px;
-    width: 190px;
+    height: 60px;
+    width: 170px;
     border-radius: 10px;
-    top: 20px;
+    top: 5px;
     left: 150px;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -184,7 +184,7 @@ body {
     transform: translateX(-50%);
     width: 80%;
     max-width: 1000px;
-    z-index: 1;
+
 }
 
 .search-box {
@@ -330,11 +330,11 @@ body {
 
 .card .date {
     position: absolute;
-    right: 10px;
-    top: 20px;
+    left: 0px;
+    top: 100px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 12px;
+    font-size: 18px;
     color: grey;
 }
 
@@ -568,12 +568,7 @@ h1 {
     font-weight: bold;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f8f8;
-}
+
 
 .testimonials-section {
     text-align: center;
@@ -625,7 +620,7 @@ body {
 
 .testimonial-profile {
     position: absolute;
-    bottom: -40px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -641,6 +636,9 @@ body {
 }
 
 .testimonial-rating {
+    position: absolute;
+    top: 0px;
+    left: 18px;
     background: #ffffff;
     border-radius: 20px;
     padding: 2px 8px;
@@ -673,6 +671,9 @@ body {
     background: #f0f0ff;
 }
 
+
+/* --- */
+
 .discount-wrapper {
     display: flex;
     justify-content: center;
@@ -697,12 +698,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 
 .discount-content {
     position: relative;
-    z-index: 2;
     text-align: center;
     color: white;
     padding: 60px 40px;
@@ -763,4 +762,237 @@ body {
 .footer-link:hover {
     background: #4F7DF9;
     color: white;
+}
+
+@media (max-width: 800px) {
+    .search-card {
+      overflow: visible;
+      white-space: nowrap;
+      min-width: min-content;
+      flex-shrink: 0;
+    }
+    .search-card .info {
+      display: inline-block;
+      min-width: 100px;
+      overflow: visible;
+    }
+
+    body {
+      height: auto;
+    }
+  
+    .header {
+        display: flex;
+      height: 60px;
+      justify-content: center;
+    }
+  
+    .header-treloo {
+        display: none; 
+    }
+  
+    .header-review, 
+    .header-tips, 
+    .header-alerts, 
+    .header-blog {
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+    .header-img {
+      height: 600px;
+    }
+  
+    .bg-text1 {
+      font-size: 36px;
+      top: 20%;
+    }
+
+    .divider-line {
+      display: none;
+    }
+  
+    .bg-text2 {
+        top: 30%;
+    }
+  
+    .search-container {
+      top: 550px;
+      width: 90%;
+    }
+  
+    .search-box {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    .search-card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .search-btn {
+      width: 30%;
+      height: 60px;
+      margin-top: 10px;
+    }
+  
+    .FH-bar {
+      top: -60px;
+      left: 37%;
+      width: 180px;
+    }
+  
+    .offers-section {
+      margin-top: 250px;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  
+    .travel-section {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  
+    .travel-img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .badge {
+      font-size: 20px;
+      height: 40px;
+      width: 80px;
+      line-height: 20px;
+    }
+  
+    .badge small {
+      font-size: 12px;
+    }
+  
+    .badge-top {
+      right: 10px;
+    }
+  
+    .badge-left {
+      left: 10px;
+    }
+  
+    .badge-bottom {
+      left: auto;
+      right: 10px;
+    }
+  
+    .travel-right {
+      text-align: center;
+    }
+  
+    .travel-right h2 {
+      font-size: 28px;
+    }
+  
+    .destination-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .destination-tabs {
+      flex-wrap: wrap;
+    }
+  
+    .destination-card {
+      width: 45%;
+    }
+  
+    .testimonials-wrapper {
+      margin-top: 100px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-card {
+      width: 90%;
+      padding: 30px 20px 50px;
+    }
+    
+    .discount-card {
+      width: 90%;
+      border-radius: 30px;
+    }
+  
+    .discount-content {
+      padding: 40px 20px;
+    }
+  
+    .discount-text {
+      font-size: 24px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+  }
+  
+
+
+@keyframes glow {
+  0% {
+      opacity: 0.3;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+      opacity: 0.3;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.divider-line {
+  position: absolute;
+  top: 49%; 
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 60%; 
+  max-width: 800px; 
+  background: white;
+  animation: glow 2s infinite ease-in-out;
+  border-radius: 2px;
 }
